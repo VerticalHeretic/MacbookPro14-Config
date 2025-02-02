@@ -1,0 +1,17 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+bufferline = "multiple"
+text-width = 120
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control","file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["diagnostics", "selections", "register", "position", "separator", "spacer", "position-percentage", "file-encoding"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
