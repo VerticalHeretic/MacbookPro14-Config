@@ -6,6 +6,7 @@ cursorline = true
 color-modes = true
 bufferline = "multiple"
 text-width = 120
+end-of-line-diagnostics = "error"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control","file-name", "read-only-indicator", "file-modification-indicator"]
