@@ -11,6 +11,9 @@ end-of-line-diagnostics = "hint"
 [editor.inline-diagnostics]
 cursor-line="error"
 
+[editor.file-picker]
+hidden = false
+
 [editor.statusline]
 left = ["mode", "spinner", "version-control","file-name", "read-only-indicator", "file-modification-indicator"]
 right = ["diagnostics", "selections", "register", "position", "separator", "spacer", "position-percentage", "file-encoding"]
