@@ -1,0 +1,19 @@
+{
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : true
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x3434",
+          "category" : "mouse",
+          "productID" : "0xd031",
+          "productName" : "Keychron Link "
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+}
