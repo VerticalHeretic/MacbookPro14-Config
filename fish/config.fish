@@ -6,3 +6,5 @@ starship init fish | source
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/verticalheretic/.lmstudio/bin
+
+pyenv init - fish | source

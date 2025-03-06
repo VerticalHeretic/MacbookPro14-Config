@@ -8,3 +8,11 @@ name = "kotlin"
 auto-format = true
 formatter = { command = "ktlint", args = ["--format", "--stdin"]}
 
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[[language]]
+name = "python"
+language-servers = ["pylsp","ruff"]
+auto-format = true
