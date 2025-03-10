@@ -3,3 +3,5 @@ nvim/
 .DS_Store
 exercism/
 raycast/extensions
+zed/conversations
+zed/prompts
