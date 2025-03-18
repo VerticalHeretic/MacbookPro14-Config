@@ -1,3 +1,4 @@
 font-family = ZedMono Nerd Font Mono
 font-size = 16
 theme = dark:catppuccin-frappe,light:catppuccin-latte
+background-opacity = 0.9
