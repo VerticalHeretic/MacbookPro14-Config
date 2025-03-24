@@ -1,0 +1,4 @@
+inherits = "base16_transparent"
+"ui.cursorline.primary" = { bg = "cursorline" }
+
+cursorline = "#2a2b3c" # Cursor line color yoinked from the catppuccin_mocha theme :)

@@ -1,19 +1,27 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "pointer" : {
-        "acceleration" : 1,
-        "disableAcceleration" : true
-      },
       "if" : {
         "device" : {
-          "vendorID" : "0x3434",
           "category" : "mouse",
-          "productID" : "0xd031",
-          "productName" : "Keychron Link "
+          "productName" : "Keychron Link ",
+          "vendorID" : "0x3434",
+          "productID" : "0xd031"
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "pointer" : {
+        "disableAcceleration" : true,
+        "acceleration" : 1
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }
