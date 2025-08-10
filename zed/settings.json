@@ -7,24 +7,34 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "context_servers": {
+    "mcp-server-github": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "github_personal_access_token": "GITHUB_PERSONAL_ACCESS_TOKEN"
+      }
+    }
+  },
   "edit_predictions": {
     "mode": "subtle",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null
-    },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
   "project_panel": {
     "dock": "left"
   },
   "theme": "Catppuccin Frappé",
-  "assistant": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+  "agent": {
+    "play_sound_when_agent_done": true,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
     },
-    "version": "2"
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
+    },
   },
   "format_on_save": "off",
   "features": {
@@ -36,6 +46,28 @@
   "relative_line_numbers": true,
   "inlay_hints": {
     "enabled": true
+  },
+  "languages": {
+    "Ruby": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "language_servers": ["ruby-lsp", "!solargraph"],
+      "formatter": {
+        "external": {
+          "command": "rubocop",
+          "arguments": [
+            "--server",
+            "--fail-level",
+            "error",
+            "--autocorrect",
+            "--stdin",
+            "corrected.rb",
+            "--stderr"
+          ]
+        }
+      }
+    }
   },
   "lsp": {
     "codebook": {
