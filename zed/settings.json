@@ -34,7 +34,7 @@
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3.7-sonnet"
-    },
+    }
   },
   "format_on_save": "off",
   "features": {
@@ -45,9 +45,31 @@
   "vim_mode": true,
   "relative_line_numbers": true,
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
+    "show_type_hints": true
+  },
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+      "debounce_ms": 50
+    },
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
+    },
+    "cargo": null
   },
   "languages": {
+    "Kotlin": {
+      "language_servers": ["kotlin-language-server"],
+      "format_on_save": "on",
+      "formatter": "language_server"
+    },
     "Ruby": {
       "tab_size": 2,
       "hard_tabs": false,
@@ -73,6 +95,15 @@
     "codebook": {
       "initialization_options": {
         "logLevel": "debug"
+      }
+    },
+    "kotlin-language-server": {
+      "settings": {
+        "compiler": {
+          "jvm": {
+            "target": "21"
+          }
+        }
       }
     }
   }
