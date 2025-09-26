@@ -21,3 +21,14 @@ args = ["server"]
 name = "python"
 language-servers = ["pylsp","ruff"]
 auto-format = true
+
+[[language]]
+name = "swift"
+scope = "source.swift"
+injection-regex = "swift"
+file-types = ["swift", "swiftinterface"]
+roots = [ "Package.swift" ]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+formatter = { command = "swift-format" }
+language-servers = [ "sourcekit-lsp" ]
