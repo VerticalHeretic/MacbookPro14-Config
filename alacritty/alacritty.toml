@@ -9,10 +9,10 @@ blur = true
 
 [font]
 size = 22.0
-normal.family = "Maple Mono"
-bold.family = "Maple Mono"
-italic.family = "Maple Mono"
-bold_italic.family = "Maple Mono"
+normal.family = "Maple Mono NF CN"
+bold.family = "Maple Mono NF CN"
+italic.family = "Maple Mono NF CN"
+bold_italic.family = "Maple Mono NF CN"
 
 [selection]
 save_to_clipboard = true
