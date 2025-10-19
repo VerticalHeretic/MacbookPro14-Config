@@ -15,3 +15,13 @@ function y
 end
 
 set -gx EDITOR nvim
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/verticalheretic/.lmstudio/bin
+# End of LM Studio CLI section
+
+# FVM
+set --export PATH /Users/verticalheretic/.fvm_flutter/bin $PATH
+
+alias flutter "fvm flutter"
+alias dart "fvm dart"

@@ -1,0 +1,50 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "confirm_quit": true,
+  "use_system_window_tabs": false,
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 17,
+  "ui_font_family": "Maple Mono NF CN",
+  "buffer_font_family": "Maple Mono NF CN",
+  "theme": {
+    "mode": "system",
+    "light": "Fleet Light",
+    "dark": "Fleet Dark Purple"
+  },
+  "autosave": "on_focus_change",
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "languages": {
+    "Swift": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "tab_size": 2
+    }
+  },
+  "lsp": {
+    "dart": {
+      "binary": {
+        "path": "/Users/verticalheretic/.fvm_flutter/bin/fvm",
+        "arguments": ["dart", "language-server", "--protocol=lsp"]
+      },
+      "settings": {
+        "lineLength": 140
+      }
+    }
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  }
+}
