@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
       "provider": "anthropic",
@@ -20,6 +21,7 @@
   "edit_predictions": {
     "mode": "subtle"
   },
+  "format_on_save": "off",
   "ui_font_size": 16,
   "buffer_font_size": 17,
   "ui_font_family": "Maple Mono NF CN",
@@ -35,7 +37,6 @@
   "languages": {
     "Swift": {
       "formatter": "language_server",
-      "format_on_save": "on",
       "tab_size": 2
     }
   },
