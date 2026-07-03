@@ -7,46 +7,33 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "project_panel": {
-    "dock": "left"
-  },
-  "outline_panel": {
-    "dock": "left"
-  },
-  "collaboration_panel": {
-    "dock": "left"
-  },
-  "git_panel": {
-    "dock": "left"
-  },
   "agent_servers": {
-    "claude-acp": {
-      "type": "registry",
-    },
+    "claude": {
+
+    }
   },
   "terminal": {
-    "shell": "system",
+    "shell": "system"
   },
   "inlay_hints": {
     "show_background": false,
-    "enabled": true,
+    "enabled": true
   },
   "agent": {
-    "dock": "right",
     "tool_permissions": {
-      "default": "allow",
+      "default": "allow"
     },
     "default_profile": "write",
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-opus-4-5-latest",
+      "model": "claude-opus-4-5-latest"
     },
-    "model_parameters": [],
+    "model_parameters": []
   },
   "confirm_quit": true,
   "use_system_window_tabs": false,
   "edit_predictions": {
-    "mode": "subtle",
+    "mode": "subtle"
   },
   "format_on_save": "off",
   "ui_font_size": 18.0,
@@ -60,28 +47,29 @@
   "languages": {
     "Swift": {
       "formatter": {
-        "external": {
-          "command": "swift-format",
-          "arguments": ["format", "--in-place"],
-        },
-      },
-      "tab_size": 2,
-    },
+            "external": {
+              "command": "swift-format",
+              "arguments": ["format", "--in-place"]
+            }
+          },
+      "tab_size": 2
+    }
   },
   "lsp": {
     "dart": {
       "binary": {
         "path": "/Users/verticalheretic/.fvm_flutter/bin/fvm",
-        "arguments": ["dart", "language-server", "--protocol=lsp"],
+        "arguments": ["dart", "language-server", "--protocol=lsp"]
       },
       "settings": {
-        "lineLength": 140,
-      },
+        "lineLength": 140
+      }
     },
+
   },
   "diagnostics": {
     "inline": {
-      "enabled": true,
-    },
-  },
+      "enabled": true
+    }
+  }
 }

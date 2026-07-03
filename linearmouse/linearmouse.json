@@ -1,40 +1,70 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.2",
   "schemes" : [
     {
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd031",
+          "productName" : "Keychron Link ",
+          "vendorID" : "0x3434"
         }
       },
       "pointer" : {
         "acceleration" : 1,
         "disableAcceleration" : true
       },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "productID" : "0xd031",
-          "vendorID" : "0x3434",
-          "productName" : "Keychron Link "
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
         }
-      },
-      "buttons" : {
-        "universalBackForward" : true
       }
     },
     {
+      "buttons" : {
+        "universalBackForward" : true
+      },
       "if" : {
         "device" : {
           "category" : "mouse",
           "productID" : "0xd030",
-          "vendorID" : "0x3434",
-          "productName" : "Keychron Link "
+          "productName" : "Keychron Link ",
+          "vendorID" : "0x3434"
         }
       },
+      "pointer" : {
+        "disableAcceleration" : true
+      }
+    },
+    {
       "buttons" : {
         "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb031",
+          "productName" : "LIFT",
+          "serialNumber" : "0FF78496",
+          "vendorID" : "0x46d"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd036",
+          "productName" : "Keychron M3 mini",
+          "vendorID" : "0x3434"
+        }
       }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }

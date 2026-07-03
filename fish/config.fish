@@ -16,6 +16,9 @@ end
 
 set -gx EDITOR nvim
 
+set -gx GOPATH (go env GOPATH)
+set -gx PATH $PATH (go env GOPATH)/bin
+
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/verticalheretic/.lmstudio/bin
 # End of LM Studio CLI section
@@ -25,3 +28,4 @@ set --export PATH /Users/verticalheretic/.fvm_flutter/bin $PATH
 
 alias flutter "fvm flutter"
 alias dart "fvm dart"
+export PATH="$HOME/.local/bin:$PATH"
