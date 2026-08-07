@@ -1,6 +1,8 @@
 onboarding = false
 [theme]
-name = "kanagawa"
+name = "tokyo-night"
+dark_name = "tokyo-night"
+light_name = "tokyo-night-day"
 auto_switch = false
 
 [ui]

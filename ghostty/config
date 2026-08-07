@@ -4,4 +4,6 @@ theme = dark:"TokyoNight Storm",light:"TokyoNight Day"
 background-opacity = 0.95
 cursor-style = block
 custom-shader = shaders/cursor_warp.glsl
+window-padding-x = 0
+window-padding-y = 0
 
