@@ -1,0 +1,10 @@
+onboarding = false
+[theme]
+name = "kanagawa"
+auto_switch = false
+
+[ui]
+agent_panel_sort = "spaces"
+
+[keys]
+prefix = "ctrl+space"

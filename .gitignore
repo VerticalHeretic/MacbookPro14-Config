@@ -3,3 +3,4 @@ github-copilot/
 exercism/
 zed/conversations
 zed/prompts
+herdr/*.log
