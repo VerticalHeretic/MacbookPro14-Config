@@ -1,0 +1,16 @@
+onboarding = false
+[theme]
+name = "tokyo-night"
+dark_name = "tokyo-night"
+light_name = "tokyo-night-day"
+auto_switch = true
+
+[ui]
+agent_panel_sort = "spaces"
+status_indicators = "symbols"
+
+[keys]
+prefix = "ctrl+space"
+
+[ui.toast]
+delivery = "herdr"

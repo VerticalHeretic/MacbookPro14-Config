@@ -1,6 +1,6 @@
 font-family = "Maple Mono NF CN"
 font-size = 18
-theme = dark:"Azulejo Brutalism Dark",light:"Azulejo Brutalism Light"
+theme = dark:"TokyoNight Storm",light:"TokyoNight Day"
 cursor-style = block
 custom-shader = shaders/cursor_warp.glsl
 window-padding-x = 0
