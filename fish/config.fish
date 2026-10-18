@@ -1,8 +1,8 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    starship init fish | source
 end
 
-starship init fish | source
+# Kept unguarded so non-interactive fish (scripts, fish -c) still get pyenv shims
 pyenv init - fish | source
 
 function y
@@ -17,15 +17,7 @@ end
 set -gx EDITOR nvim
 
 set -gx GOPATH (go env GOPATH)
-set -gx PATH $PATH (go env GOPATH)/bin
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/verticalheretic/.lmstudio/bin
-# End of LM Studio CLI section
-
-# FVM
-set --export PATH /Users/verticalheretic/.fvm_flutter/bin $PATH
-
-alias flutter "fvm flutter"
-alias dart "fvm dart"
-export PATH="$HOME/.local/bin:$PATH"
+# PATH: fish_add_path is idempotent and skips non-existent directories
+fish_add_path -P -a $GOPATH/bin $HOME/build_from_source
+fish_add_path -P $HOME/.local/bin
